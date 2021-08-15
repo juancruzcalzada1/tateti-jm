@@ -15,6 +15,28 @@ el juego puede continuar dejando libre una posición del tablero y seleccionar o
 - La selección de nuevas posiciones por parte de ambos jugadores, será en función a como se
 desarrolle la partida y finalizará cuando un de los jugadores logre formar TA-TE-TI.
 '''
+#Función de inicio - Define de forma aleatoria quien es "X" y "O" y quien comienza jugando en la partida.
+import random
+
+simbolos=["X","O"]
+
+jug1=str(input('Ingresar nombre del jugador 1: '))
+jug2=str(input('Ingresar nombre del jugador 2: '))
+
+def ini_partida(x,y):
+    jugadores=[jug1,jug2]
+    asig1=(random.choice(simbolos))
+    if asig1=='X':
+        asig2='O'
+    else:
+        asig2='X'
+    print('La asignación de letras es: ', jug1,'=',asig1, '|', jug2, '=', asig2)
+    print('Inicia la partida:',random.choice(jugadores))
+    return ()
+
+ini_partida(jug1,jug2)
+
+
 def mostrar_tablero(tablero): # se crea función para crear el tablero e imprimirlo en pantalla
     for fila in tablero:
         for i in range (len (fila)): # recorre cada elemento de la fila
