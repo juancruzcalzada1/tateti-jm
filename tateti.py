@@ -1,4 +1,20 @@
-#Proyecto final - Minijuego TATETI
+#Proyecto final - Minijuego TATETI (Grupo: Juan Cruz - Mirko)
+'''Reglamento:
+1. Cantidad de jugadores: 2.
+2. Objetivo: Formar TA-TE-TI en el tablero de juego.
+3. El jugador que inicia el juego lo define el sistema en forma aleatoria.
+
+Como jugar:
+- Al inicio el sistema define en forma aleatoria cual de los 2 jugadores comienza la partida.
+- Inicialmente, cada jugador podrá elegir 3 posiciones del tablero (que estén vacías), según se desarrolla
+la partida.
+- El jugador que comienza podrá elegir cualquier posición del tablero (incuida la del centro).
+- Luego de la primer jugada, continua el otro jugador y así sucesivamente de forma alternada.
+- Si no hay un ganador luego de elegidas las 3 posiciones del tablero por cada jugador,
+el juego puede continuar dejando libre una posición del tablero y seleccionar otra distinta a esta, pero libre.
+- La selección de nuevas posiciones por parte de ambos jugadores, será en función a como se
+desarrolle la partida y finalizará cuando un de los jugadores logre formar TA-TE-TI.
+'''
 def mostrar_tablero(tablero): # se crea función para crear el tablero e imprimirlo en pantalla
     for fila in tablero:
         for i in range (len (fila)): # recorre cada elemento de la fila
