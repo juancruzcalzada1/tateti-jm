@@ -1,0 +1,59 @@
+Opción 1: TA-TE-TI
+Consigna:
+Para este proyecto, deberán programar el juego TA-TE-TI. 
+
+Cuando el programa comienza a correr, en la pantalla aparece el tablero de TA-TE-TI (de 3x3)
+
+sacar por tantalla "Juego tateti"
+imprimir por pantalla el tablero /n
+
+|_|_|_|
+|_|_|_|
+|_|_|_|
+
+y un input que permite al usuario elegir el símbolo 
+
+“X” o el símbolo “O”.
+ingresar nombre de jugadores
+Definir de forma aleatoria quien arranca primero (función random.ranint)
+
+Las “X” empiezan.
+
+
+El usuario debe elegir la posición del tablero 
+(esta posición debe ser correcta y no debe estar ocupada)
+donde poner el símbolo en el tablero 
+
+- funcion tablero --> (posición, letra [X/O])
+
+|_|_|_|
+|_|x|_|
+|_|_|_|
+ 
+y el sistema valida si el juego termina con un ganador o en empate.
+
+- Condicionales and / or 
+
+Si no hay ganador o la partida no terminó todavía en empate, el juego 
+continúa preguntando al otro usuario que seleccione la posición del tablero dónde quiere poner su 
+símbolo y así siguiendo hasta que la partida termine con un ganador o en empate.
+
+- Condicionales and / or 
+
+Notas:
+ Representar el tablero como una matriz de 3x3.
+ El juego termina en empate cuando el tablero está completo y no hay ganadores.
+ Ejemplo de dibujo de tablero vacío:
+|_|_|_|
+|_|_|_|
+|_|_|_|
+ Ejemplo de dibujo en pantalla tablero completo: 
+|X|X|O|
+|O|O|X|
+|X|X|O|
+Formato de entrega:
+Alojar en un repositorio GitHub público el código fuente del proyecto (debe consistir en un único 
+archivo .py). Indicar en la descripción la información completa del mismo
+
+Otras funciones:
+- upper: para pasar de minúscula a mayúsculas
