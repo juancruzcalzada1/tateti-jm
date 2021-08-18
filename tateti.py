@@ -38,8 +38,7 @@ ini_partida(jug1,jug2)
 
 
 
-#Hacer tablero simple con las referencias en forma de superíndice (ejemplo ³)
-#tablero tateti _  filasx3
+
 
 def mostrar_tablero(tablero): # se crea función para crear el tablero e imprimirlo en pantalla
     for fila in tablero:
