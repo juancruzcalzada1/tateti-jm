@@ -30,12 +30,16 @@ def ini_partida(x,y):
         asig2='O'
     else:
         asig2='X'
-    print('La asignación de letras es: ', jug1,'=',asig1, '|', jug2, '=', asig2)
+    print('La asignación de letras para: ', jug1,' es ',asig1, ' y ', jug2, ' es ', asig2)
     print('Inicia la partida:',random.choice(jugadores))
     return ()
 
 ini_partida(jug1,jug2)
 
+
+
+#Hacer tablero simple con las referencias en forma de superíndice (ejemplo ³)
+#tablero tateti _  filasx3
 
 def mostrar_tablero(tablero): # se crea función para crear el tablero e imprimirlo en pantalla
     for fila in tablero:
@@ -43,13 +47,14 @@ def mostrar_tablero(tablero): # se crea función para crear el tablero e imprimi
             if i==len(fila)-1: # representa el último elemento de cada lista,ya que el largo de cada sublista es de 5 elementos(len=4),ya que se cuenta desde subindice 0 a 4.
                 print(fila[i],end='\n') # se muestra en pantalla sólo el último elemento de cada lista y con '\n' se baja al siguiente renglón, para armar el tablero
             else: # si no es el último elemento, se lo imprime en pantalla y no se baja a siguiente renglón
-                print(fila[i], end='  ') 
-tablero= [ 
-    [' ', '|', ' ', '|', ' '], # posición 0,1,2,3,4 de la lista 0 [0:0,0:1,0:2,0:3,0:4]
-    ['-', '+', '-', '+', '-'], # posición 0,1,2,3,4 de la lista 1 [1:0,1:1,1:2,1:3,1:4]
-    [' ', '|', ' ', '|', ' '], # posición 0,1,2,3,4 de la lista 2 [2:0,2:1,2:2,2:3,2:4]
-    ['-', '+', '-', '+', '-'], # posición 0,1,2,3,4 de la lista 3 [3:0,3:1,3:2,3:3,3:4]
-    [' ', '|', ' ', '|', ' ']  # posición 0,1,2,3,4 de la lista 4 [4:0,4:1,4:2,4:3,4:4]
+                print(fila[i], end=' ') 
+tablero= [
+    ['| 1','| 2 |','3 |'],
+    ['-------------'],
+    ['| 4','| 5 |','6 |'],
+    ['-------------'],
+    ['| 7','| 8 |','9 |'],
+    
 ]
 mostrar_tablero(tablero)
 
